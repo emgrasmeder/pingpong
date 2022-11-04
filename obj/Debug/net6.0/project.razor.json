@@ -16298,8 +16298,28 @@
   "RootNamespace": "pingpong",
   "Documents": [
     {
+      "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/Playerz/Delete.cshtml",
+      "TargetPath": "Views\\Playerz\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/Players/Index.cshtml",
+      "TargetPath": "Views\\Players\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/Playerz/Create.cshtml",
+      "TargetPath": "Views\\Playerz\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/Playerz/Index.cshtml",
+      "TargetPath": "Views\\Playerz\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16330,6 +16350,16 @@
     {
       "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/Playerz/Edit.cshtml",
+      "TargetPath": "Views\\Playerz\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/em/src/github.com/emgrasmeder/pingpong/Views/Playerz/Details.cshtml",
+      "TargetPath": "Views\\Playerz\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],
