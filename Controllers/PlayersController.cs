@@ -49,13 +49,13 @@ namespace pingpong.Controllers
         {
             return View();
         }
-
+        
         // POST: Players/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] Player player)
+        public async Task<IActionResult> Create([Bind("Id,Name,ScoreTies,ScoreLosses,ScoreWins")] Player player)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace pingpong.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] Player player)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,ScoreTies,ScoreLosses,ScoreWins")] Player player)
         {
             if (id != player.Id)
             {

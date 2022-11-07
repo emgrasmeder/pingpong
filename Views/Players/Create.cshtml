@@ -18,6 +18,21 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="ScoreTies" class="control-label"></label>
+                <input asp-for="ScoreTies" class="form-control" />
+                <span asp-validation-for="ScoreTies" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScoreLosses" class="control-label"></label>
+                <input asp-for="ScoreLosses" class="form-control" />
+                <span asp-validation-for="ScoreLosses" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScoreWins" class="control-label"></label>
+                <input asp-for="ScoreWins" class="form-control" />
+                <span asp-validation-for="ScoreWins" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
