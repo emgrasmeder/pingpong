@@ -23,7 +23,7 @@ namespace pingpong.Controllers
         {
               return _context.Player != null ? 
                           View(await _context.Player.ToListAsync()) :
-                          Problem("Entity set 'pingpongContext.Player'  is null.");
+                          Problem("Entity set 'pingpongContext.Player' is null.");
         }
 
         // GET: Players/Details/5
