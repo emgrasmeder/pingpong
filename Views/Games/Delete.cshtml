@@ -1,21 +1,37 @@
-@model pingpong.Models.Player
+@model pingpong.Models.Game
 
 @{
     ViewData["Title"] = "Delete";
+    ViewData["ModelName"] = "Game";
 }
 
 <h1>Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Are you sure you want to delete this @ViewData["ModelName"]?</h3>
 <div>
-    <h4>Player</h4>
+    <h4>@ViewData["ModelName"]</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            Id
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
+        <dt class = "col-sm-2">
+            Date
+        </dt>
+        <dt class = "col-sm-2">
+            Match
+        </dt>
+    </dl>
+    <dl class="row">
+        <dd class = "col-sm-2">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dd class = "col-sm-2">
+            @Html.DisplayFor(model => model.GameDate)
+        </dd>
+        <dd class = "col-sm-7">
+            "@((Model.AwayTeam == null) ? "NaN" : Model.AwayTeam)" @@ "@((Model.HomeTeam == null) ? "NaN" : Model.HomeTeam)"
+
         </dd>
     </dl>
     
