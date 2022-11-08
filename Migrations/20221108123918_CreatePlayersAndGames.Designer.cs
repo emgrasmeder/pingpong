@@ -10,13 +10,36 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace pingpong.Migrations
 {
     [DbContext(typeof(pingpongContext))]
-    [Migration("20221107130129_WinsLossesTies")]
-    partial class WinsLossesTies
+    [Migration("20221108123918_CreatePlayersAndGames")]
+    partial class CreatePlayersAndGames
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.10");
+
+            modelBuilder.Entity("pingpong.Models.Game", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("AwayTeam")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("GameDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("HomeTeam")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("Score")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Game");
+                });
 
             modelBuilder.Entity("pingpong.Models.Player", b =>
                 {

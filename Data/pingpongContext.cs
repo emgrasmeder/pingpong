@@ -13,4 +13,5 @@ using pingpong.Models;
         }
 
         public DbSet<pingpong.Models.Player> Player { get; set; } = default!;
+        public DbSet<pingpong.Models.Game> Game { get; set; } = default!;
     }

@@ -1,28 +1,28 @@
-@model IEnumerable<pingpong.Models.Player>
+@model IEnumerable<pingpong.Models.Game>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Game Schedule";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New Game</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ScoreTies)
+                @Html.DisplayNameFor(model => model.GameDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ScoreLosses)
+                @Html.DisplayNameFor(model => model.HomeTeam)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ScoreWins)
+                @Html.DisplayNameFor(model => model.AwayTeam)
             </th>
             <th></th>
         </tr>
@@ -31,16 +31,16 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ScoreTies)
+                @Html.DisplayFor(modelItem => item.GameDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ScoreLosses)
+                @Html.DisplayFor(modelItem => item.HomeTeam)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ScoreWins)
+                @Html.DisplayFor(modelItem => item.AwayTeam)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
