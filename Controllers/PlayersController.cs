@@ -44,6 +44,12 @@ namespace pingpong.Controllers
             return View(player);
         }
 
+        // GET: Players/Search/5
+        public string Search(string id)
+        {
+            return $"The id was {id}";
+        }
+
         // GET: Players/Create
         public IActionResult Create()
         {
